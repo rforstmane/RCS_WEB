@@ -1,0 +1,112 @@
+.mySlides{
+    display: none; /* pēc noklusējuma nebūs redzams*/
+}
+
+.slideshow-container{
+    position: relative; /* pozīcija attiecībā pret citiem elementiem*/
+    margin: 0;
+}
+
+.prev, .next{
+    cursor: pointer; /* kursors pārvēršas bultā*/
+    position: absolute; /*bultas uzliekas viena otrai virsū*/
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color:bisque;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+
+.prev:hover, .next:hover{
+    background-color: darksalmon;
+}
+
+.text{
+    color: bisque;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    bottom: 45px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.numbertext{
+    color: bisque;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: darksalmon;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: bisque;
+}
+
+.dots-container {
+    width: 100%; /*aizņem visu pieejamo platumu*/
+    position: absolute;
+    text-align: center;
+    bottom: 15px;
+    padding: 8px 12px;
+}
+
+.mySlides img{
+    width: 100%;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+}
+
+.item {
+    width: calc(100%/3 - 1%);
+    overflow: hidden;
+    float: left;
+    padding: 5px;
+    border: #bbb solid 1px;
+    height: 220px;
+}
+
+.item img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}

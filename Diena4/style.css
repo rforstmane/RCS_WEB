@@ -1,0 +1,19 @@
+/* .rinda{
+    width: 100%;
+}
+
+.kubiks{
+    width: 30%;
+} */
+
+@media screen and (max-width: 700px){
+    .kubiks{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .kubiks{
+        width: 50%;
+    }
+}

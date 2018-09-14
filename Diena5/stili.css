@@ -1,0 +1,9 @@
+.bilde{
+    width: 50%;
+    height: 150px;
+    display: inline-block;
+}
+
+.bilde img{
+    height: 150px;
+}

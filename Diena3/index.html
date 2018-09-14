@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Pogas lapa</title>
+    </head>
+    <body>
+        <button id="poga">Testa poga</button>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+  <script>
+      $(document).ready(function(){
+          $("#poga").click(function(){
+              $("#poga").after("<button>test</button")
+              console.log("Hello JQuery");
+            //   vai arī alert("Hello JQuery") tas izleks kā lodziņš lapas augšpusē
+          });
+      });
+  </script>
+
+  <script>
+      $(document).ready(function(){
+          $("#poga").click(function(){
+              $.get(
+                  "https://api.darksky.net/forecast/2b0c4ba0d82289859d8d14fd03a22c5e/56.9496,24.1052?units=si",
+                  function(data){
+                      $("#poga").append("<img src='"+data.Poster+"' alt='filma'>");
+                      console.log(data);
+                    })
+                });
+        });
+  </script>
+</html>

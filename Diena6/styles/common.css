@@ -1,0 +1,29 @@
+ul{
+    list-style-type: none; /* noņemas bumbuļ*/
+    background-color: bisque; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; /* nepārrakstīsies pāri*/
+}
+
+li{
+    float: left; /* visi būs vienā rindā*/
+
+}
+
+li a{
+    display: block; /*elements kļūst par bloku */
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    background-color: aquamarine;
+}
+
+.active{
+    background-color: darksalmon;
+    font-weight: bold;
+}
